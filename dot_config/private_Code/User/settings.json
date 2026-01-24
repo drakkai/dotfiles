@@ -1,0 +1,106 @@
+{
+  "files.autoSave": "onFocusChange",
+  "window.restoreWindows": "none",
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "One Dark Pro",
+  "editor.fontFamily": "Source Code Pro Semibold, Consolas, 'Courier New', monospace",
+  "editor.fontSize": 13,
+  "workbench.iconTheme": "material-icon-theme",
+  "files.associations": {
+    "Podmanfile": "dockerfile",
+    "*.ign": "json"
+  },
+  "[dockerfile]": {
+    "editor.parameterHints.enabled": false,
+    "editor.quickSuggestions": {
+      "other": false,
+      "comments": false,
+      "strings": false
+    }
+  },
+  "remote.SSH.suppressWindowsSshWarning": true,
+  "sync.gist": "41732bda4d475c21fe9adf8c8b662a1a",
+  "sync.autoDownload": true,
+  "sync.autoUpload": true,
+  "sync.removeExtensions": false,
+  "vs-kubernetes": {
+    "disable-linters": ["resource-limits"]
+  },
+  "editor.formatOnSave": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "python.languageServer": "Pylance",
+  "python.analysis.useImportHeuristic": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  // "editor.semanticHighlighting.enabled": false
+  "editor.semanticTokenColorCustomizations": {
+    "[One Dark Pro]": {
+      "rules": {
+        "variable": "#ABB2BF", // One Dark Pro's default text color
+        "variable.readonly": "#D19A66",
+        "function.decorator:python": "#56b6c2",
+        "class.decorator:python": "#56b6c2",
+        "property:python": "#D19A66"
+      }
+    }
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "punctuation.definition.string.begin",
+          "punctuation.definition.string.end"
+        ],
+        "settings": {
+          "foreground": "#74965d"
+        }
+      },
+      {
+        "scope": "keyword.operator",
+        "settings": {
+          "foreground": "#56b6c2"
+        }
+      }
+    ]
+  },
+  "editor.renderControlCharacters": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "[helm]": {
+    "editor.formatOnSave": false
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "redhat.telemetry.enabled": false,
+  "git.confirmSync": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "latex-workshop.view.pdf.viewer": "tab",
+  "git.enableSmartCommit": true,
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "gopls": {
+    "ui.semanticTokens": true
+  },
+  "window.commandCenter": false,
+  "git.ignoreRebaseWarning": true,
+  "git.openRepositoryInParentFolders": "always",
+  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font Mono",
+  "terminal.integrated.fontLigatures": true,
+  "settingsSync.ignoredSettings": [
+    "terminal.integrated.fontFamily",
+    "terminal.integrated.fontSize"
+  ],
+  "makefile.configureOnOpen": false
+  // "evenBetterToml.schema.associations": {
+  //   "pyproject.toml": "https://json.schemastore.org/pyproject.json"
+  // }
+}
