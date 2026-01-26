@@ -1,5 +1,4 @@
 {
-  "files.autoSave": "onFocusChange",
   "window.restoreWindows": "none",
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "One Dark Pro",
@@ -18,20 +17,12 @@
       "strings": false,
     },
   },
-  "remote.SSH.suppressWindowsSshWarning": true,
-  "sync.gist": "41732bda4d475c21fe9adf8c8b662a1a",
-  "sync.autoDownload": true,
-  "sync.autoUpload": true,
-  "sync.removeExtensions": false,
   "vs-kubernetes": {
     "disable-linters": ["resource-limits"],
   },
   "editor.formatOnSave": true,
-  "python.analysis.typeCheckingMode": "basic",
-  // "python.languageServer": "Pylance",
   "python.analysis.useImportHeuristic": true,
   "python.analysis.inlayHints.functionReturnTypes": true,
-  // "editor.semanticHighlighting.enabled": false
   "editor.semanticTokenColorCustomizations": {
     "[One Dark Pro]": {
       "rules": {
@@ -40,6 +31,10 @@
         "function.decorator:python": "#56b6c2",
         "class.decorator:python": "#56b6c2",
         "property:python": "#D19A66",
+        // "property:python": {"foreground": "#d19a66"},
+        "*.typeHint:python": "#ABB2BF",
+        "property.declaration:python": "#D19A66",
+        "parameter:python": { "fontStyle": "" },
       },
     },
   },
@@ -62,6 +57,7 @@
       },
     ],
   },
+  "ruff.lint.ignore": ["E501"],
   "editor.renderControlCharacters": false,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook",
@@ -76,6 +72,7 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
   "redhat.telemetry.enabled": false,
+  "ansible.lightspeed.enabled": false,
   "git.confirmSync": false,
   "security.workspace.trust.untrustedFiles": "open",
   "git.enableSmartCommit": true,
@@ -84,10 +81,20 @@
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.organizeImports": "explicit",
+      "source.fixAll": "explicit",
+      "source.addMissingImports": "explicit",
     },
   },
   "gopls": {
     "ui.semanticTokens": true,
+  },
+  "go.useLanguageServer": true,
+  "go.formatTool": "goimports",
+  "[go]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+    },
   },
   "window.commandCenter": false,
   "git.ignoreRebaseWarning": true,
@@ -99,6 +106,21 @@
   "terminal.integrated.fontFamily": "UbuntuMono Nerd Font Mono",
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.fontLigatures.enabled": true,
+  "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/__pycache__": true,
+    "**/.venv": true,
+    "**/.mypy_cache": true,
+    "**/.ruff_cache": true,
+    "**/.pytest_cache": true,
+    "**/.coverage": true,
+    "**/.vscode": true,
+  },
   // "evenBetterToml.schema.associations": {
   //   "pyproject.toml": "https://json.schemastore.org/pyproject.json"
   // }
