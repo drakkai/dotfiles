@@ -200,7 +200,7 @@ go.work.sum
 .env
 
 # vscode
-.vscode
+.vscode/
 
 # ansible
-.ansible
+.ansible/

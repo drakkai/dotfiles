@@ -120,6 +120,7 @@
     "**/.pytest_cache": true,
     "**/.coverage": true,
     "**/.vscode": true,
+    "**/.ansible": true,
   },
   // "evenBetterToml.schema.associations": {
   //   "pyproject.toml": "https://json.schemastore.org/pyproject.json"
