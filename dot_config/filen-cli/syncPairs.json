@@ -1,0 +1,11 @@
+[
+  {
+    "local": "/home/drakkai/Documents/notes",
+    "remote": "/syncs/obsidian/notes",
+    "syncMode": "twoWay",
+    "alias": "obsidian_notes",
+    "disableLocalTrash": false,
+    "ignore": [".git"],
+    "excludeDotFiles": false
+  }
+]
