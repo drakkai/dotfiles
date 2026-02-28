@@ -1,0 +1,14 @@
+[Unit]
+Description=Filen CLI Sync Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/filen sync --continuous
+Restart=on-failure
+RestartSec=5
+User=1000
+
+[Install]
+WantedBy=default.target
