@@ -1,3 +1,4 @@
 .oh-my-zsh-custom/plugins
 .oh-my-zsh-custom/themes
 .config/systemd/user/default.target.wants
+.zsh_custom/plugins
